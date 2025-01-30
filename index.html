@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeohCakes</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./icons/53o3i86x.png" alt="logo" class="logo" />
+    </header>
+
+    <h1>LeohCakes</h1>
+
+    <section>
+      <div>
+        <a
+          href="https://api.whatsapp.com/send/?phone=5521982126842&text&type=phone_number&app_absent=0"
+          target="_blank"
+          >WhatsApp
+          <img src="./icones/icons8-whatsapp-48.png" alt="whatsapp" />
+        </a>
+        <a
+          href="https://www.instagram.com/leohcakes?igsh=ZjE5aWY1MnA1OXhi"
+          target="_blank"
+          >Siga-nos no Instagram
+          <img src="icons/icons8-instagram-48.png" alt="instagram" />
+        </a>
+        <a href="cardapio.html" class="button"
+          >Cardápio
+          <img src="icons/icons8-confeitaria-48.png" alt="cake" />
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; <span id="anoAtual"></span> Desenvolvido por Anderson Pinheiro
+      </p>
+
+      <script>
+        document.getElementById("anoAtual").textContent =
+          new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
+</html>

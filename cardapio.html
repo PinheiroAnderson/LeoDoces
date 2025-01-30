@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos - LeohCakes</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./icons/53o3i86x.png" alt="logo" class="logo" />
+    </header>
+
+    <h1>Cardápio de Produtos</h1>
+
+    <section>
+        <div class="gallery-container">
+            <div class="gallery">
+                <img src="./cardapio/card1.jpeg" alt="Cardápio 1"/>
+                <img src="./cardapio/card4.jpeg" alt="Cardápio 4" />
+                <img src="./cardapio/card3.jpeg" alt="Cardápio 3" />
+                <img src="./cardapio/card2.jpeg" alt="Cardápio 2" />
+            </div>
+        </div>
+        <div class="btn-container">
+            <button onclick="window.location.href='index.html'">Voltar</button>
+        </div>
+    </section>
+
+
+    <footer>
+      <p>
+        &copy; <span id="anoAtual"></span> Desenvolvido por Anderson Pinheiro
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("anoAtual").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
