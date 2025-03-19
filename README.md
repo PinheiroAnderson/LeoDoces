@@ -72,5 +72,4 @@ Sinta-se à vontade para abrir issues ou pull requests! Feedbacks são sempre be
 
 ---
 
-### 🚀 [LeohCakes - Acesse o Projeto]([link-do-projeto-no-github-pages-ou-repositorio](https://pinheiroanderson.github.io/LeoDoces/index.html))
 
