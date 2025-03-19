@@ -61,8 +61,8 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Desenvolvido por **Anderson Pinheiro**  
 📧 [ anderson.programador@yahoo.com ]  
-🔗 [Seu LinkedIn Aqui](https://www.linkedin.com/in/anderson-pinheiro-32551829a/)]  
-🌐 [[Link para o projeto no GitHub Pages, se quiser disponibilizar](https://pinheiroanderson.github.io/LeoDoces/index.html)]
+🔗 [ LinkedIn ](https://www.linkedin.com/in/anderson-pinheiro-32551829a/)]  
+🌐 [[Link para o projeto ](https://pinheiroanderson.github.io/LeoDoces/index.html)]
 
 ---
 
@@ -72,5 +72,5 @@ Sinta-se à vontade para abrir issues ou pull requests! Feedbacks são sempre be
 
 ---
 
-### 🚀 **[LeohCakes - Acesse o Projeto]([link-do-projeto-no-github-pages-ou-repositorio](https://pinheiroanderson.github.io/LeoDoces/index.html))**
+### 🚀 [LeohCakes - Acesse o Projeto]([link-do-projeto-no-github-pages-ou-repositorio](https://pinheiroanderson.github.io/LeoDoces/index.html))
 
