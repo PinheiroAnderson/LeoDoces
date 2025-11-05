@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LeohCakes</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   </head>
 
   <body>
@@ -14,7 +15,7 @@
 
     <h1>LeohCakes</h1>
 
-    <section>
+    <section id="app">
       <div>
         <a
           href="https://api.whatsapp.com/send/?phone=5521982126842&text&type=phone_number&app_absent=0"
@@ -43,6 +44,16 @@
       <script>
         document.getElementById("anoAtual").textContent =
           new Date().getFullYear();
+
+        new Vue({
+          el: '#app',
+          data: {
+            // Dados para futuras expansões
+          },
+          methods: {
+            // Métodos para futuras funcionalidades
+          }
+        });
       </script>
     </footer>
   </body>

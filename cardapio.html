@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produtos - LeohCakes</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
   </head>
 
   <body>
@@ -14,18 +15,22 @@
 
     <h1>Cardápio de Produtos</h1>
 
-    <section>
+    <section id="app">
         <div class="gallery-container">
             <div class="gallery">
-                <img src="./cardapio/card1.jpeg" alt="Cardápio 1"/>
-                <img src="./cardapio/card4.jpeg" alt="Cardápio 4" />
-                <img src="./cardapio/card3.jpeg" alt="Cardápio 3" />
-                <img src="./cardapio/card2.jpeg" alt="Cardápio 2" />
-                <img src="./cardapio/card5.jpg" alt="Cardápio 5" />
+                <img v-for="cardapio in cardapios" :key="cardapio.id" :src="cardapio.src" :alt="cardapio.alt" @click="openModal(cardapio.src)" class="gallery-img"/>
             </div>
         </div>
         <div class="btn-container">
             <button onclick="window.location.href='index.html'">Voltar</button>
+        </div>
+
+        <!-- Modal -->
+        <div v-if="showModal" class="modal" @click="closeModal">
+            <div class="modal-content" @click.stop>
+                <span class="close" @click="closeModal">&times;</span>
+                <img :src="selectedImage" alt="Imagem ampliada" class="modal-img"/>
+            </div>
         </div>
     </section>
 
@@ -39,6 +44,31 @@
     <script>
       document.getElementById("anoAtual").textContent =
         new Date().getFullYear();
+
+      new Vue({
+        el: '#app',
+        data: {
+          cardapios: [
+            { id: 1, src: './cardapio/card1.jpeg', alt: 'Cardápio 1' },
+            { id: 2, src: './cardapio/card4.jpeg', alt: 'Cardápio 4' },
+            { id: 3, src: './cardapio/card3.jpeg', alt: 'Cardápio 3' },
+            { id: 4, src: './cardapio/card2.jpeg', alt: 'Cardápio 2' },
+            { id: 5, src: './cardapio/card5.jpg', alt: 'Cardápio 5' }
+          ],
+          showModal: false,
+          selectedImage: ''
+        },
+        methods: {
+          openModal(src) {
+            this.selectedImage = src;
+            this.showModal = true;
+          },
+          closeModal() {
+            this.showModal = false;
+            this.selectedImage = '';
+          }
+        }
+      });
     </script>
   </body>
 </html>
